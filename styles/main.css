@@ -486,6 +486,37 @@ nav {
     fill: rgb(200, 200, 6);
 }
 
+.scroll-button {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid var(--primaryColor);
+    background: var(--primaryColor);
+    transition: background 0.3s ease;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.scrollbuttonFade {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.scroll-button:hover {
+    background: #bd7438d2;
+}
+
+#for_scroll_top {
+    fill: var(--blackColor);
+}
+
 @keyframes textpopup {
     from {
         transform: translateY(100%);

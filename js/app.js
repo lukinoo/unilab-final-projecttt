@@ -25,11 +25,24 @@ events = () => {
 
         parallaxEffect = () => {
             const bigTitle = document.querySelector('.big-title');
+            const scrollButton = document.getElementById('scroll-top');
 
             window.addEventListener('scroll', function() {
-                let scrollYOffset = pageYOffset;
+                let scrollYO = pageYOffset;
 
-                bigTitle.style.transform = `translate3d(0px, ${scrollYOffset * -2}px, 0px)`;
+                // scrolltop button
+                if (scrollYO > 20) {
+                    scrollButton.classList.add('scrollbuttonFade');
+                } else {
+                    scrollButton.classList.remove('scrollbuttonFade');
+                }
+
+                scrollButton.addEventListener('click', () => {
+                    document.documentElement.scrollTop = 0;
+                });
+
+                // big text parallax effect
+                bigTitle.style.transform = `translate3d(0px, ${scrollYO * -2}px, 0px)`;
             });
         };
 
