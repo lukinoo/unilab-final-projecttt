@@ -78,6 +78,7 @@ nav {
     height: 2px;
     background: #E9E8E8;
     margin: 6px;
+    transition: transform 0.3s ease;
 }
 
 /* login and contact buttons */
@@ -151,7 +152,7 @@ nav {
     top: 0;
     left: 0;
     background: #000;
-    z-index: 99;
+    z-index: 99999;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,7 +187,7 @@ nav {
     background: var(--primaryColor);
     transform: translateY(100%);
     animation: slider 1.6s ease 1.5s forwards;
-    z-index: 99;
+    z-index: 99999;
 }
 
 /* second container */
@@ -225,7 +226,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* flex-wrap: wrap; es responsivze daschirdeba*/
 }
 
 .featured-trip-text {
@@ -280,7 +280,6 @@ nav {
 .first-deals-cont, .second-deals-cont {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -363,7 +362,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -434,10 +432,61 @@ nav {
 
 .reviews-wrapper {
     font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-/* @keyframes textpopup {
+.main-footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+.creator {
+    font-size: 1.5rem;
+    color: var(--textColor);
+}
+
+.main-footer {
+    min-height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-box {
+    min-height: 300px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.user-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-size: 2.5rem;
+    color: var(--blackColor);
+}
+
+.user-img {
+    width: 100%;
+    height: 100%;
+}
+
+.rate-star {
+    fill: rgb(200, 200, 6);
+}
+
+@keyframes textpopup {
     from {
         transform: translateY(100%);
     }
@@ -462,4 +511,93 @@ nav {
     to {
         transform: translateY(-100%);
     }
-} */
+}
+
+@media screen and (max-width: 768px) {
+    .big-title {
+        font-size: 4rem;
+        letter-spacing: 1rem;
+    }
+    .review-box {
+        min-height: 150px;
+        margin: 1.5rem;
+    }
+    
+    .main-intro-text {
+        font-size: 3rem;
+    }
+
+    .small-title {
+        font-size: 2rem;
+        initial-letter: 0.5rem;
+        margin-top: 10px;
+    }
+    .nav-links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #05141f;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s ease;
+        pointer-events: none;
+        transform: scaleY(0);
+        z-index: 99;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 6%;
+        right: 10%;
+        cursor: pointer;
+        z-index: 999;
+    }
+    .reviews-wrapper {
+        flex-wrap: wrap;
+    }
+    .social-media {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .featured-trip-image-and-text {
+        flex-wrap: wrap;
+    }
+    .featured-trip-image, #responsive-display, .about-us-image {
+        display: none;
+    }
+    .deals-title, .container-title {
+        font-size: 3rem;
+    }
+    .second-deals-cont {
+        flex-direction: column;
+    }
+    .container-about-us {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .about-us-info{
+        width: 100%;
+    }
+}
+
+.nav-links-open {
+    transform: scaleY(1);
+    pointer-events: all;
+}
+
+.hamburger-line .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-line .line2 {
+    opacity: 0;
+}
+
+.hamburger-line .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
