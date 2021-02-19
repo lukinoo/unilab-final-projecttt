@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css" />   
     <title>Unilab final project</title>
 </head>
@@ -41,7 +41,7 @@
                         <a class="hyperlinks" href="#tours">Tours</a>
                     </li>
                     <li>
-                        <a class="hyperlinks" href="#">About</a>
+                        <a class="hyperlinks" href="#about-us">About</a>
                     </li>
                     <li>
                         <a href="#" class="Log-in-button">Log in</a>
@@ -100,10 +100,14 @@
     <!-- second container -->
     <section class="container" id="Featured-trip">
         <div class="second-wrapper">
-            <h1 class="container-title">Featured Trips</h1>
+            <h1>
+               <span class="container-title">Featured Trips</span>
+            </h1>
             <div class="featured-trip-image-and-text">
                 <img class="featured-trip-image" src="./images/featured trips 1.jpg" alt="featured trip 01" />
                 <p class="featured-trip-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, nostrum et quia sapiente veritatis omnis at fugiat obcaecati inventore odit enim eius quisquam? Tempore rerum in, dolores reiciendis assumenda amet!
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, nostrum et quia sapiente veritatis omnis at fugiat obcaecati inventore odit enim eius quisquam? Tempore rerum in, dolores reiciendis assumenda amet!
                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 </p>
             </div>
@@ -113,48 +117,115 @@
     <section id="tours">
         <div class="second-image">
             <div class="container">
-                <div class="small-boxes">
-                    <div class="tours-title">
-                        <h1 class="container-title">Top Deals</h1>
-                    </div>
-                    <div class="top-side">
+                <div class="container-for-deals">
+                        <h1>
+                            <span class="deals-title" id="deals-title-change">Top deals</span>
+                        </h1>
+                    <div class="first-deals-cont">
+                         <!-- es unda wavshalo mere -->
                         <div class="box">
-                            <img class="box-images" src="./images/for-box1.jpg" alt="box1 image">
-                            <div class="box-textes">
-                                <h2>Norway</h2>
+                            <img class="deals-image" src="./images/box1-image.jpg" alt="image1">
+                            <p class="cost">$750</p>
+                            <div class="small-info-daels">
+                                <h3>NORWAY</h3>
                                 <p>14night, 15days</p>
                             </div>
                         </div>
                         <div class="box">
-                            <img class="box-images" src="./images/for-box2.jpg" alt="box2 image">
-                            <h2>Norway</h2>
-                            <p>14night, 15days</p>
+                            <img class="deals-image" src="./images/box2-image.jpg" alt="image2">
+                            <p class="cost">$650</p>
+                            <div class="small-info-daels">
+                                <h3>INDONESIA</h3>
+                                <p>7night, 8days</p>
+                            </div>
                         </div>
                         <div class="box">
-                            <img class="box-images" src="./images/for-box3.jpg" alt="box3 image">
-                            <h2>Norway</h2>
-                            <p>14night, 15days</p>
+                            <img class="deals-image" src="./images/box3-image.jpg" alt="image3">
+                            <p class="cost">$450</p>
+                            <div class="small-info-daels">
+                                <h3>BRAZIL</h3>
+                                <p>10night, 11days</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="bottom-side">
+                    <div class="second-deals-cont">
                         <div class="box">
-                            <img class="box-images" src="./images/for-box4.jpg" alt="for-box-4">
-                            <h2>Norway</h2>
-                            <p>14night, 15days</p>
+                            <img class="deals-image" src="./images/box4-image.jpg" alt="image4">
+                            <p class="cost">$750</p>
+                            <div class="small-info-daels">
+                                <h3>GERMANY</h3>
+                                <p>14night, 15days</p>
+                            </div>
                         </div>
                         <div class="box">
-                            <img class="box-images" src="./images/for-box5.jpg" alt="for-box-5">
-                            <h2>Norway</h2>
-                            <p>14night, 15days</p>
+                            <img class="deals-image" src="./images/box5-image.jpg" alt="image5">
+                            <p class="cost">
+                                <span id="sale">$450</span>
+                               <span>$350</span>
+                               <div class="small-info-daels">
+                                <h3>Switzerland</h3>
+                                <p>12night, 13days</p>
+                            </div>
+                            </p>
                         </div>
                         <div class="box">
-                            <img class="box-images" src="./images/for-box6.jpg" alt="for-box-6">
-                            <h2>Norway</h2>
-                            <p>14night, 15days</p>
+                            <img class="deals-image" src="./images/box6-image.jpg" alt="image6">
+                            <p class="cost">$1000</p>
+                            <div class="small-info-daels">
+                                <h3>INDONESIA</h3>
+                                <p>14night, 15days</p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="button-for-see-more">
+                        <a class="see-more-btn" href="#">See more</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="about-us">
+        <div class="container">
+            <div class="container-about-us">
+                <div class="about-us-info">
+                    <div class="about-us-title">
+                        <h1>
+                            <span class="deals-title">About Us</span>
+                        </h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ex molestiae corrupti, optio tenetur praesentium alias perspiciatis qui laudantium nemo, omnis eveniet ut cum incidunt possimus officia odit consequatur architecto.
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam a exercitationem?
+                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sint harum explicabo, perspiciatis non minus mollitia perferendis dolorum animi incidunt impedit? Quam aut quis amet perferendis quaerat beatae odit hic?
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, at ex dicta enim aspernatur debitis numquam commodi voluptas temporibus assumenda, distinctio eius, qui consectetur minima? Excepturi illum nesciunt sed saepe.
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex explicabo rerum ipsam tenetur minus facere? Provident impedit animi, quae error ratione asperiores iste a cupiditate harum voluptates, itaque reiciendis vitae?
+                    </p>
+                    <div class="button-for-view-details">
+                        <a class="view-details-btn" href="#">See more</a>
+                    </div>
+                </div>
+                <div class="about-us-image box">
+                    <img class="about-img deals-image" src="./images/about us.jpg" alt="About us">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="review-section-image">
+            <footer class="container">
+                <div class="reviews-wrapper">
+                    <div class="review-box">
+                        <div class="user-circle">
+                            <div class="user"></div>
+                        </div>
+                        <h4>John doe</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ad deserunt at eos mollitia nihil facere dolor minus sunt repudiandae.</p>
+                        <div class="rates">
+                            <img src="./images/rate stars.svg" alt="rate star">
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </section>
 

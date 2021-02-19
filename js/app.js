@@ -3,7 +3,6 @@ events = () => {
     animationFade = () => {
         // intro texts
         const introTexts = document.querySelectorAll('.main-intro-text');
-        const hamburger = document.querySelector('.hamburger');
 
         // small delay on intro text
         introTexts.forEach((introText,index) => {
@@ -13,6 +12,12 @@ events = () => {
 
     };
     
+        navigationBar = () => {
+            const hamburger = document.querySelector('.hamburger');
+            // navigation
+            
+        };
+
         parallaxEffect = () => {
             const bigTitle = document.querySelector('.big-title');
 
@@ -27,6 +32,7 @@ events = () => {
     // function call
     animationFade();
     parallaxEffect();
+    navigationBar();
 };
 
 // main function call here

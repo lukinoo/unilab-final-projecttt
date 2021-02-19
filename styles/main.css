@@ -6,6 +6,10 @@ html {
     -ms-scroll-behavior: smooth;
 }
 
+p {
+    font-size: 1.5rem;
+}
+
 :root {
     --primaryColor: #bd7438;
     --textColor: #E9E8E8;
@@ -50,6 +54,7 @@ nav {
     justify-content: space-between;
     width: 50%;
     font-family: 'Lato', sans-serif;
+    font-weight: bold;
 }
 
 .hyperlinks {
@@ -60,6 +65,11 @@ nav {
 }
 
 .hamburger {
+    position: absolute;
+    top: 6%;
+    right: 10%;
+    cursor: pointer;
+    z-index: 80;
     display: none;
 }
 
@@ -74,13 +84,23 @@ nav {
 
 .Log-in-button {
     padding: 5px 15px;
+    display: inline-block;
     color: var(--textColor);
     font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
     font-size: 1.3rem;
-    background: none;
     border: 0.1rem solid var(--primaryColor);
     border-radius: 3px;
+    transition: transform 0.4s ease;
     cursor: pointer;
+}
+
+.buttons {
+    display: inline-block;
+}
+
+.Log-in-button:hover {
+    transform: scale(0.98);
 }
 
 .color-change-contact-button {
@@ -124,14 +144,14 @@ nav {
 
 /* intro animation with keyFrames */
 
-/* .intro {
+.intro {
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     background: #000;
-    z-index: 30;
+    z-index: 99;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,8 +186,8 @@ nav {
     background: var(--primaryColor);
     transform: translateY(100%);
     animation: slider 1.6s ease 1.5s forwards;
-    z-index: 50;
-} */
+    z-index: 99;
+}
 
 /* second container */
 .second-wrapper {
@@ -176,7 +196,6 @@ nav {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    align-items: center;
 }
 
 .featured-trip-image {
@@ -197,7 +216,7 @@ nav {
     position: absolute;
     top: -10px;
     left: 0;
-    width: 50%;
+    width: 60%;
     height: 6px;
     background: var(--blackColor);
 }
@@ -207,19 +226,18 @@ nav {
     align-items: center;
     justify-content: space-around;
     /* flex-wrap: wrap; es responsivze daschirdeba*/
-    padding: 2rem;
 }
 
 .featured-trip-text {
     font-size: 1.5rem;
     color: var(--blackColor);
-    padding: 0rem 2rem;
+    padding: 0rem 5rem;
 }
 
 /* third section deals */
 .second-image {
     min-height: 100vh;
-    background: url('../images/third-section-image.jpg');
+    background: url('../images/111.jpg');
     background-size: cover;
     position: relative;
     background-attachment: fixed;
@@ -233,34 +251,190 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     z-index: -1;
 }
 
-.small-boxes {
+.container-for-deals {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.deals-title {
+    font-size: 5rem;
+    color: var(--textColor);
+    letter-spacing: 5px;
+    position: relative;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+#deals-title-change {
+    color: var(--textColor);
+}
+
+.first-deals-cont, .second-deals-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.deals-image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.box {
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.box:hover .deals-image {
+    transform: scale(1.05);
+}
+
+.cost {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--primaryColor);
+    padding: 5px;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.small-info-daels {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    background: rgba(0, 0, 0, 0.6);
 }
 
-.top-side, .bottom-side {
+.small-info-daels h3,p {
+    color: var(--textColor);
+}
+
+.small-info-daels h3 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.see-more-btn {
+    padding: 10px 30px;
+    color: var(--textColor);
+    border-radius: 3px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #BC7942;
+    border: 1px solid #BC7942;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.see-more-btn:hover {
+    transform: scale(0.98);
+    background: none;
+}
+
+#sale {
+    text-decoration: line-through;
+    color: #000;
+}
+
+/* <--------()------->*/
+
+.container-about-us {
+    min-height: 100vh;
     display: flex;
-    justify-content: space-around;
-}
- 
-h2 {
-    font-size: 2rem;
-}
-
-.box {
-    width: 25%;
-    min-height: 30vh;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
 }
 
-.box-images {
+.about-us-info p, .deals-title{
+    color: var(--blackColor);
+    font-weight: bold;
+    padding: 2rem 0rem;
+}
+
+.about-us-info p {
+    font-weight: lighter;
+}
+
+.about-us-info{
+    width: 50%;
+    padding: 3rem;
+}
+
+.about-us-image {
+    width: 400px;
+    height: 550px;
+}
+
+.about-img {
     width: 100%;
+    height: 100%;
+}
+
+.view-details-btn {
+    padding: 10px 30px;
+    color: var(--textColor);
+    border-radius: 3px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: var(--blackColor);
+    border: 1px solid var(--blackColor);
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+
+.view-details-btn:hover {
+    transform: scale(0.98);
+    background: none;
+    color: var(--blackColor);
+}
+
+/* last section reviews */
+
+.review-section-image {
+    min-height: 100vh;
+    background: url('../images/review-section-image.jpg');
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+.review-section-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.reviews-wrapper {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
 }
 
 /* @keyframes textpopup {
