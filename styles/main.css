@@ -90,7 +90,7 @@ nav {
     transition: background 0.3s ease;
 }
 
-.nav-links:hover .nav-button {
+.nav-button:hover {
     background: none;
 }
 
@@ -138,7 +138,7 @@ nav {
 }
 
 .social-media {
-    width: 15%;
+    width: 16%;
     display: flex;
     justify-content: space-around;
 }
