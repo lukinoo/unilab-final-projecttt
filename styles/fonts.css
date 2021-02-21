@@ -1,0 +1,37 @@
+/* Poppins font */
+@font-face {
+    font-family: PoppinsLight;
+    src: url('../fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: PoppinsMedium;
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: PoppinsRegular;
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: PoppinsBold;
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+
+/* Lato font */
+
+@font-face {
+    font-family: LatoRegular;
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: LatoLight;
+    src: url('../fonts/Lato-Light.ttf');
+}
+
+@font-face {
+    font-family: LatoBold;
+    src: url('../fonts/Lato-Bold.ttf');
+}

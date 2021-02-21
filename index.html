@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/main.css" />   
+     <link rel="stylesheet" href="./styles/reset.css" />
+     <link rel="stylesheet" href="./styles/fonts.css" />
+     <link rel="stylesheet" href="./styles/main.css" />
+     <link rel="shortcut icon" href="./images/shortcut icon.png" />
     <title>Unilab final project</title>
-    <link rel="shortcut icon" href="./images/shortcut icon.png" />
 </head>
 <body>
-     <header class="first-image">
-        <div class="container">
-            <nav>
-                <div>
-                    <a href="#">
-                        <svg class="logo" width="55" height="55" viewBox="0 0 58.831 58.832">
-                            <g id="logo-2">
+     <header>
+        <div class="background-image">
+            <div class="container-wrapper">
+                <nav>
+                    <div class="logo">
+                        <svg width="55" height="55" viewBox="0 0 58.831 58.832">
+                            <g id="logo" transform="translate(-0.004)">
                               <g id="Group_2" data-name="Group 2">
                                 <g id="Group_1" data-name="Group 1">
                                   <path id="Path_1" data-name="Path 1" d="M29.419,0a29.364,29.364,0,0,0-27.3,40.3l.728-1.083L14.29,19.8A2.451,2.451,0,0,1,16.349,18.6a2.513,2.513,0,0,1,2.106,1.115l2.66,4.089,6.192-10.506a2.453,2.453,0,0,1,4.287.115L40.222,30l3.822-6.479A2.447,2.447,0,0,1,46.1,22.314a2.512,2.512,0,0,1,2.111,1.118L56.96,36.889l.632.946A29.381,29.381,0,0,0,29.419,0Z" transform="translate(-0.004)" fill="#dbdbdb"/>
@@ -29,259 +28,252 @@
                               </g>
                             </g>
                           </svg>                          
-                    </a>
+                    </div>
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#featured-trip">FEATURED</a>
+                        </li>
+                        <li>
+                            <a href="#deals">TOURS</a>
+                        </li>
+                        <li>
+                            <a href="#about-us">ABOUT</a>
+                        </li>
+                        <li>
+                            <a class="nav-button" href="#">Log in</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+                <div class="main-section-in-first-look">
+                    <div class="big-headers">
+                        <h1 class="big-title">travel</h1>
+                        <h4 class="small-title">in mountains</h4>
+                    </div>
+                    <div class="social-media" id="social-media-responsive">
+                        <a href="#">
+                            <svg width="25" height="25" viewBox="0 0 30 30">
+                                <path id="facebook" d="M15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm3.75,10H17.062c-.673,0-.812.276-.812.972V12.5h2.5L18.489,15H16.25v8.75H12.5V15H10V12.5h2.5V9.615c0-2.211,1.164-3.365,3.786-3.365H18.75Z" fill="#e9e8e8"/>
+                              </svg>                              
+                        </a>
+                        <a href="#">
+                            <svg width="25" height="25" viewBox="0 0 30 30">
+                                <path id="twitter" d="M15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm7.582,12.056A10.21,10.21,0,0,1,6.875,21.122a7.223,7.223,0,0,0,5.315-1.486,3.6,3.6,0,0,1-3.355-2.494,3.6,3.6,0,0,0,1.623-.061,3.6,3.6,0,0,1-2.88-3.566,3.582,3.582,0,0,0,1.626.449A3.6,3.6,0,0,1,8.093,9.17a10.191,10.191,0,0,0,7.4,3.751,3.593,3.593,0,0,1,6.119-3.275,7.161,7.161,0,0,0,2.28-.871,3.605,3.605,0,0,1-1.579,1.986,7.162,7.162,0,0,0,2.061-.566A7.206,7.206,0,0,1,22.582,12.056Z" fill="#e9e8e8"/>
+                              </svg>                              
+                        </a>
+                        <a href="#">
+                            <svg width="25" height="25" viewBox="0 0 30 30">
+                                <path id="instagram" d="M18.536,7.878c-.922-.043-1.2-.05-3.536-.05s-2.613.009-3.535.05c-2.374.109-3.479,1.232-3.587,3.587-.041.922-.051,1.2-.051,3.535s.01,2.612.051,3.536c.109,2.349,1.209,3.479,3.587,3.587.921.041,1.2.051,3.535.051s2.614-.009,3.536-.051c2.374-.107,3.478-1.235,3.587-3.587.041-.922.05-1.2.05-3.536s-.009-2.613-.05-3.535c-.11-2.354-1.216-3.479-3.587-3.588ZM15,19.494A4.493,4.493,0,1,1,19.494,15,4.494,4.494,0,0,1,15,19.494Zm4.671-8.114a1.05,1.05,0,1,1,1.05-1.05A1.05,1.05,0,0,1,19.671,11.38ZM17.916,15A2.916,2.916,0,1,1,15,12.084,2.916,2.916,0,0,1,17.916,15ZM15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm8.7,18.607c-.144,3.181-1.915,4.944-5.089,5.09-.934.042-1.233.052-3.609.052s-2.674-.01-3.608-.052c-3.18-.146-4.944-1.911-5.09-5.09C6.26,17.675,6.25,17.376,6.25,15s.01-2.674.052-3.608c.146-3.18,1.911-4.944,5.09-5.089C12.326,6.26,12.624,6.25,15,6.25s2.675.01,3.609.054c3.181.146,4.946,1.915,5.089,5.089.042.934.052,1.231.052,3.608S23.74,17.675,23.7,18.607Z" fill="#e9e8e8"/>
+                              </svg>                              
+                        </a>
+                    </div>
                 </div>
-                <ul class="nav-links">
-                    <li>
-                        <a class="hyperlinks" href="#">Home</a>
-                    </li>
-                    <li>
-                        <a class="hyperlinks" href="#Featured-trip">Featured</a>
-                    </li>
-                    <li>
-                        <a class="hyperlinks" href="#tours">Tours</a>
-                    </li>
-                    <li>
-                        <a class="hyperlinks" href="#about-us">About</a>
-                    </li>
-                    <li>
-                        <a href="#" class="Log-in-button">Log in</a>
-                    </li>
-                    <li>
-                        <a href="#" class="Log-in-button color-change-contact-button">Contacts</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>  
-            </nav>
-            <div class="main-section-in-first-look">
-                <div class="first-look">
-                    <h1 class="big-title">travel</h1>
-                    <h4 class="small-title">in mountains</h4>
-                </div>
-                <div class="social-media">
-                    <a href="#">
-                        <svg width="30" height="30" viewBox="0 0 30 30">
-                            <path id="facebook" d="M15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm3.75,10H17.062c-.673,0-.812.276-.812.972V12.5h2.5L18.489,15H16.25v8.75H12.5V15H10V12.5h2.5V9.615c0-2.211,1.164-3.365,3.786-3.365H18.75Z" fill="#e9e8e8"/>
-                          </svg>                      
-                    </a>
-                    <a href="#">
-                        <svg width="30" height="30" viewBox="0 0 30 30">
-                            <path id="twitter" d="M15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm7.582,12.056A10.21,10.21,0,0,1,6.875,21.122a7.223,7.223,0,0,0,5.315-1.486,3.6,3.6,0,0,1-3.355-2.494,3.6,3.6,0,0,0,1.623-.061,3.6,3.6,0,0,1-2.88-3.566,3.582,3.582,0,0,0,1.626.449A3.6,3.6,0,0,1,8.093,9.17a10.191,10.191,0,0,0,7.4,3.751,3.593,3.593,0,0,1,6.119-3.275,7.161,7.161,0,0,0,2.28-.871,3.605,3.605,0,0,1-1.579,1.986,7.162,7.162,0,0,0,2.061-.566A7.206,7.206,0,0,1,22.582,12.056Z" fill="#e9e8e8"/>
-                          </svg>                      
-                    </a>
-                    <a href="#">
-                        <svg width="30" height="30" viewBox="0 0 30 30">
-                            <path id="instagram" d="M18.536,7.878c-.922-.043-1.2-.05-3.536-.05s-2.613.009-3.535.05c-2.374.109-3.479,1.232-3.587,3.587-.041.922-.051,1.2-.051,3.535s.01,2.612.051,3.536c.109,2.349,1.209,3.479,3.587,3.587.921.041,1.2.051,3.535.051s2.614-.009,3.536-.051c2.374-.107,3.478-1.235,3.587-3.587.041-.922.05-1.2.05-3.536s-.009-2.613-.05-3.535c-.11-2.354-1.216-3.479-3.587-3.588ZM15,19.494A4.493,4.493,0,1,1,19.494,15,4.494,4.494,0,0,1,15,19.494Zm4.671-8.114a1.05,1.05,0,1,1,1.05-1.05A1.05,1.05,0,0,1,19.671,11.38ZM17.916,15A2.916,2.916,0,1,1,15,12.084,2.916,2.916,0,0,1,17.916,15ZM15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm8.7,18.607c-.144,3.181-1.915,4.944-5.089,5.09-.934.042-1.233.052-3.609.052s-2.674-.01-3.608-.052c-3.18-.146-4.944-1.911-5.09-5.09C6.26,17.675,6.25,17.376,6.25,15s.01-2.674.052-3.608c.146-3.18,1.911-4.944,5.09-5.089C12.326,6.26,12.624,6.25,15,6.25s2.675.01,3.609.054c3.181.146,4.946,1.915,5.089,5.089.042.934.052,1.231.052,3.608S23.74,17.675,23.7,18.607Z" fill="#e9e8e8"/>
-                          </svg>                      
-                    </a>
+                <div class="intro">
+                    <div class="intro-text">
+                        <div class="hide">
+                            <span class="main-intro-text">Plane your next</span>
+                        </div>
+                        <div class="hide">
+                            <span class="main-intro-text">Adventure</span>
+                        </div>
+                        <div class="hide">
+                            <span class="main-intro-text">here.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="intro">
-            <div class="intro-text">
-                <h1 class="hide">
-                    <span class="main-intro-text">Plane your next</span>
-                </h1>
-                <h1 class="hide">
-                    <span class="main-intro-text">adventure</span>
-                </h1>
-                <h1 class="hide">
-                    <span class="main-intro-text">here.</span>
-                </h1>
-            </div>
-        </div>
-    </header>
-    <!-- slider thing -->
-    <div class="slider"></div>
+     </header>
+     <!-- slider -->
+     <div class="slider"></div>
 
-    <!-- second container -->
-    <section class="container" id="Featured-trip">
-        <div class="second-wrapper">
-            <h1>
-               <span class="container-title">Featured Trips</span>
-            </h1>
-            <div class="featured-trip-image-and-text">
-                <img class="featured-trip-image" src="./images/featured trips 1.jpg" alt="featured trip 01" />
-                <p class="featured-trip-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, nostrum et quia sapiente veritatis omnis at fugiat obcaecati inventore odit enim eius quisquam? Tempore rerum in, dolores reiciendis assumenda amet!
-                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="tours">
-        <div class="second-image">
-            <div class="container">
-                <div class="container-for-deals">
-                        <h1>
-                            <span class="deals-title" id="deals-title-change">Top deals</span>
-                        </h1>
-                    <div class="first-deals-cont" id="responsive-display">
+     <!-- second container -->
+     <section id="featured-trip">
+         <div class="container-wrapper">
+             <div class="featured">
+                <div class="for-featured-image">
+                    <img class="featured-img" src="./images/featured trips 1.jpg" alt="featured trip">
+                </div>
+                 <div class="featured-texts">
+                    <h3 class="featured-title">Featured trips</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus illo, repellat repellendus perspiciatis, vero possimus ducimus nulla officia harum corporis ex odit optio alias aliquid culpa repudiandae asperiores quidem. Sint.
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi accusamus, quis totam fugit voluptas expedita praesentium natus hic ipsum. Optio modi aliquam voluptatibus omnis! Quas maxime quod doloremque corporis omnis?
+                    </p>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <section id="deals">
+        <div class="background-image second-background-image">
+            <div class="container-wrapper">
+                <div class="top-deals">
+                    <div class="top-side">
                         <div class="box">
-                            <img class="deals-image" src="./images/box1-image.jpg" alt="image1">
+                            <img class="box-image" src="./images/box1-image.jpg" alt="box1" />
                             <p class="cost">$750</p>
-                            <div class="small-info-daels">
-                                <h3>NORWAY</h3>
+                            <div class="small-info-of-deals">
+                                <h5>NORWAY</h5>
                                 <p>14night, 15days</p>
                             </div>
                         </div>
                         <div class="box">
-                            <img class="deals-image" src="./images/box2-image.jpg" alt="image2">
-                            <p class="cost">$650</p>
-                            <div class="small-info-daels">
-                                <h3>INDONESIA</h3>
+                            <img class="box-image" src="./images/box2-image.jpg" alt="box2" />
+                            <p class="cost">$350</p>
+                            <div class="small-info-of-deals">
+                                <h5>INDONESIA</h5>
                                 <p>7night, 8days</p>
                             </div>
                         </div>
                         <div class="box">
-                            <img class="deals-image" src="./images/box3-image.jpg" alt="image3">
-                            <p class="cost">$450</p>
-                            <div class="small-info-daels">
-                                <h3>BRAZIL</h3>
+                            <img class="box-image" src="./images/box3-image.jpg" alt="box3" />
+                            <p class="cost">$750</p>
+                            <div class="small-info-of-deals">
+                                <h5>BRAZIL</h5>
                                 <p>10night, 11days</p>
                             </div>
                         </div>
                     </div>
-                    <div class="second-deals-cont">
+                    <div class="middle-side">
                         <div class="box">
-                            <img class="deals-image" src="./images/box4-image.jpg" alt="image4">
-                            <p class="cost">$750</p>
-                            <div class="small-info-daels">
-                                <h3>GERMANY</h3>
+                            <img class="box-image" src="./images/box4-image.jpg" alt="box4" />
+                            <p class="cost">$850</p>
+                            <div class="small-info-of-deals">
+                                <h5>GERMANY</h5>
                                 <p>14night, 15days</p>
                             </div>
                         </div>
                         <div class="box">
-                            <img class="deals-image" src="./images/box5-image.jpg" alt="image5">
+                            <img class="box-image" src="./images/box5-image.jpg" alt="box5" />
                             <p class="cost">
-                                <span id="sale">$450</span>
-                               <span>$350</span>
-                               <div class="small-info-daels">
-                                <h3>Switzerland</h3>
+                                $750 <span style="text-decoration: line-through;">$450</span>
+                            </p>
+                            <div class="small-info-of-deals">
+                                <h5>SWITZERLAND</h5>
                                 <p>12night, 13days</p>
                             </div>
-                            </p>
                         </div>
                         <div class="box">
-                            <img class="deals-image" src="./images/box6-image.jpg" alt="image6">
-                            <p class="cost">$1000</p>
-                            <div class="small-info-daels">
-                                <h3>INDONESIA</h3>
+                            <img class="box-image" src="./images/box6-image.jpg" alt="box6" />
+                            <p class="cost">$750</p>
+                            <div class="small-info-of-deals">
+                                <h5>INDONESIA</h5>
                                 <p>14night, 15days</p>
                             </div>
                         </div>
                     </div>
-                    <div class="button-for-see-more">
-                        <a class="see-more-btn" href="#">See more</a>
+                    <div class="bottom-side">
+                        <div class="button-for-see-more">
+                            <a class="see-more-button" href="#">See more</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="about-us">
-        <div class="container">
-            <div class="container-about-us">
-                <div class="about-us-info">
-                    <div class="about-us-title">
-                        <h1>
-                            <span class="deals-title">About Us</span>
-                        </h1>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ex molestiae corrupti, optio tenetur praesentium alias perspiciatis qui laudantium nemo, omnis eveniet ut cum incidunt possimus officia odit consequatur architecto.
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     </section>
+     <section id="about-us">
+         <div class="container-wrapper">
+             <div class="about-section">
+                <div class="introduction">
+                    <h3 class="about-title">About us</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore itaque pariatur tempora assumenda tenetur veniam, quasi nostrum commodi exercitationem fuga iure illo explicabo autem quibusdam beatae. Quas ab eveniet consectetur?
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, velit, accusamus voluptas pariatur, veritatis quibusdam maiores dolorem at quam excepturi sapiente iusto beatae? Officia nisi tempora facere, facilis quam incidunt?
+                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, cupiditate?
                     </p>
-                    <div class="button-for-view-details">
-                        <a class="view-details-btn" href="#">See more</a>
+            
+                    <div class="button-for-see-more">
+                        <a class="see-more-button see-more-button-changes" href="#">See more</a>
                     </div>
                 </div>
-                <div class="about-us-image box">
-                    <img class="about-img deals-image" src="./images/about us.jpg" alt="About us">
+                <div class="about-image">
+                    <img class="about-us-img" src="./images/about us.jpg" alt="about us" />
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <section>
-        <div class="review-section-image">
-            <div class="container">
-                <div class="reviews-wrapper">
+             </div>
+         </div>
+     </section>
+
+     <section>
+        <div class="background-image second-background-image review-section-image">
+            <div class="container-wrapper">
+                <div class="review-container">
                     <div class="review-box">
                         <div class="user-circle">
-                            <img class="user-img" src="./images/user.png" alt="user">
+                            <img class="user-image" src="./images/user.png" alt="user" />
                         </div>
-                        <h4 class="user-name">John doe</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ad deserunt at eos mollitia nihil facere dolor minus sunt repudiandae.</p>
+                        <h4>John doe</h4>
+                        <p>Best trip ever! 🤩 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, expedita.</p>
                         <div class="rates">
-                            <svg class="rate-star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
-                            <svg class="rate-star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
-                            <svg class="rate-star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
-                            <svg class="rate-star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
-                            <svg class="rate-star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
-                        </div>
-                    </div>
-                    <div class="review-box">
-                        <div class="user-circle">
-                            <img class="user-img" src="./images/user.png" alt="user">
-                        </div>
-                        <h4 class="user-name">Jane doe</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ad deserunt at eos mollitia nihil facere dolor minus sunt repudiandae.</p>
-                        <div class="rates">
-                            <svg class="rate-star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
-                            <svg class="rate-star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
-                            <svg class="rate-star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
-                            <svg class="rate-star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg class="star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg class="star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg class="star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg class="star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg class="star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
                         </div>
                     </div>
                     <div class="review-box">
                         <div class="user-circle">
-                            <img class="user-img" src="./images/user.png" alt="user">
+                            <img class="user-image" src="./images/user.png" alt="user" />
                         </div>
-                        <h4 class="user-name">jon doe</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ad deserunt at eos mollitia nihil facere dolor minus sunt repudiandae.</p>
+                        <h4>Jon doe</h4>
+                        <p>Best trip ever! 🤩 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, expedita.</p>
                         <div class="rates">
-                            <svg class="rate-star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
-                            <svg class="rate-star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
-                            <svg class="rate-star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
-                            <svg class="rate-star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
-                            <svg class="rate-star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg class="star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg class="star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg class="star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg class="star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                        </div>
+                    </div>
+                    <div class="review-box">
+                        <div class="user-circle">
+                            <img class="user-image" src="./images/user.png" alt="user" />
+                        </div>
+                        <h4>Jane doe</h4>
+                        <p>Best trip ever! 🤩 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, expedita.</p>
+                        <div class="rates">
+                            <svg class="star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg class="star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg class="star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg class="star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg class="star" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
                         </div>
                     </div>
                 </div>
-                <footer class="main-footer">
+                <footer>
+                   <div class="social-media-footer-side">
                     <div class="social-media">
                         <a href="#">
-                            <svg width="30" height="30" viewBox="0 0 30 30">
+                            <svg width="25" height="25" viewBox="0 0 30 30">
                                 <path id="facebook" d="M15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm3.75,10H17.062c-.673,0-.812.276-.812.972V12.5h2.5L18.489,15H16.25v8.75H12.5V15H10V12.5h2.5V9.615c0-2.211,1.164-3.365,3.786-3.365H18.75Z" fill="#e9e8e8"/>
-                              </svg>                      
+                              </svg>                              
                         </a>
                         <a href="#">
-                            <svg width="30" height="30" viewBox="0 0 30 30">
+                            <svg width="25" height="25" viewBox="0 0 30 30">
                                 <path id="twitter" d="M15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm7.582,12.056A10.21,10.21,0,0,1,6.875,21.122a7.223,7.223,0,0,0,5.315-1.486,3.6,3.6,0,0,1-3.355-2.494,3.6,3.6,0,0,0,1.623-.061,3.6,3.6,0,0,1-2.88-3.566,3.582,3.582,0,0,0,1.626.449A3.6,3.6,0,0,1,8.093,9.17a10.191,10.191,0,0,0,7.4,3.751,3.593,3.593,0,0,1,6.119-3.275,7.161,7.161,0,0,0,2.28-.871,3.605,3.605,0,0,1-1.579,1.986,7.162,7.162,0,0,0,2.061-.566A7.206,7.206,0,0,1,22.582,12.056Z" fill="#e9e8e8"/>
-                              </svg>                      
+                              </svg>                              
                         </a>
                         <a href="#">
-                            <svg width="30" height="30" viewBox="0 0 30 30">
+                            <svg width="25" height="25" viewBox="0 0 30 30">
                                 <path id="instagram" d="M18.536,7.878c-.922-.043-1.2-.05-3.536-.05s-2.613.009-3.535.05c-2.374.109-3.479,1.232-3.587,3.587-.041.922-.051,1.2-.051,3.535s.01,2.612.051,3.536c.109,2.349,1.209,3.479,3.587,3.587.921.041,1.2.051,3.535.051s2.614-.009,3.536-.051c2.374-.107,3.478-1.235,3.587-3.587.041-.922.05-1.2.05-3.536s-.009-2.613-.05-3.535c-.11-2.354-1.216-3.479-3.587-3.588ZM15,19.494A4.493,4.493,0,1,1,19.494,15,4.494,4.494,0,0,1,15,19.494Zm4.671-8.114a1.05,1.05,0,1,1,1.05-1.05A1.05,1.05,0,0,1,19.671,11.38ZM17.916,15A2.916,2.916,0,1,1,15,12.084,2.916,2.916,0,0,1,17.916,15ZM15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm8.7,18.607c-.144,3.181-1.915,4.944-5.089,5.09-.934.042-1.233.052-3.609.052s-2.674-.01-3.608-.052c-3.18-.146-4.944-1.911-5.09-5.09C6.26,17.675,6.25,17.376,6.25,15s.01-2.674.052-3.608c.146-3.18,1.911-4.944,5.09-5.089C12.326,6.26,12.624,6.25,15,6.25s2.675.01,3.609.054c3.181.146,4.946,1.915,5.089,5.089.042.934.052,1.231.052,3.608S23.74,17.675,23.7,18.607Z" fill="#e9e8e8"/>
-                              </svg>                      
+                              </svg>                              
                         </a>
+                    </div>
+                    <div class="contact-button">
+                        <a href="#">Contacts</a>
                     </div>
                     <div class="author">
-                        <span class="creator">Created by: luka bliadze</span>
+                        <h6>created by luka bliadze</h6>
                     </div>
+                   </div>
                 </footer>
             </div>
         </div>
-    </section>
-    <button class="scroll-button" id="scroll-top" type="button">
-        <svg width="40.917" height="19.044" viewBox="0 0 42.917 19.044">
-            <path id="for_scroll_top" data-name="for scroll top" d="M4,1.35,21.109,21.458,4,41.52l.737,1.4L17.561,27.886l5.484-6.427L4.725,0Z" transform="translate(0 23.044) rotate(-90)" fill-rule="evenodd"/>
-          </svg>          
-    </button>
+     </section>
 
     <script src="./js/app.js" defer></script>
 </body>
