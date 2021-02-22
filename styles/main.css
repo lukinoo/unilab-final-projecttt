@@ -351,22 +351,8 @@ nav {
 
 .see-more-button-changes {
     border-color: var(--blackColor);
-    color: #000;
+    color: var(--blackColor);
     background: none;
-    position: relative;
-    z-index: 10;
-}
-
-.see-more-button-changes::after {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 100%;
-    height: 100%;
-    border-radius: var(--borderRadius);
-    z-index: -1;
-    background: rgba(27, 27, 27, 0.4);
 }
 
 .about-image:hover .about-us-img {
@@ -489,6 +475,104 @@ nav {
     }
 }
 
+
+/* login section */
+.registration {
+    background-image: linear-gradient(to right, #6c7e8bce 0%, #517fa4c2 100%);
+    min-height: 100vh;
+}
+
+.registration-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+}
+
+.left-side {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.left-side::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--blackMask);
+    width: 100%;
+    height: 100%;
+}
+
+.left-side::after {
+    content: 'Get ready to Adventure.';
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    color: var(--whiteColor);
+    font-size: var(--bigFontSize);
+    font-family: LatoBold;
+}
+
+.right-side {
+    align-self: center;
+    justify-self: center;
+}
+
+form {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem 5rem;
+    border-radius: 8px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3), 0px 0px 50px rgba(0, 0, 0, 0.3);
+    background: var(--whiteColor);
+    text-align: center;
+}
+
+form h2 {
+    font-size: 3.5rem;
+    font-family: PoppinsBold;
+    color: var(--blackColor);
+}
+
+form input {
+    padding: 7px 11px;
+    border: none;
+    background: none;
+    outline: none;
+    border: 1.5px solid var(--blackColor);
+    border-radius: var(--borderRadius);
+}
+
+form p {
+    font-size: var(--extraSmallsize);
+}
+
+.registration-button {
+    padding: 6px 18px;
+    font-size: var(--smallFontSize);
+    color: var(--whiteColor);
+    border: none;
+    outline: none;
+    background: none;
+    background: var(--primaryColor);
+    border-radius: var(--borderRadius);
+    cursor: pointer;
+}
+
+form h5 {
+    font-size: var(--smallFontSize);
+}
+
+.registration-image {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
 @media screen and (max-width: 1024px) {
     .nav-links {
         position: absolute;
@@ -497,7 +581,7 @@ nav {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background: var(--blueColor);
+        background: rgb(0, 0, 27);
         transform: translateY(-100%);
         width: 100%;
         height: 100%;
@@ -596,4 +680,13 @@ nav {
 
 .hamburger-line .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 1300px) {
+    .left-side {
+        display: none;
+    }
+    .registration-container {
+        grid-template-columns:1fr;
+    }
 }
