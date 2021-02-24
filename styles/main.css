@@ -94,6 +94,36 @@ nav {
     background: none;
 }
 
+.scroll-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    background: var(--primaryColor);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: background 0.5s ease;
+    z-index: 99;
+    opacity: 0;
+}
+
+.scroll-button-active {
+    opacity: 1;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.scroll-button:hover {
+    background: rgb(194, 63, 15);
+}
+
+.scroll-button svg {
+    fill: var(--whiteColor);;
+}
+
 /* navigation hamburger */
 .hamburger {
     position: absolute;
@@ -478,14 +508,13 @@ nav {
 
 /* login section */
 .registration {
-    background-image: linear-gradient(to right, #6c7e8bce 0%, #517fa4c2 100%);
     min-height: 100vh;
 }
 
 .registration-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .left-side {
@@ -526,8 +555,8 @@ form {
     justify-content: space-between;
     align-items: center;
     padding: 10rem 5rem;
-    border-radius: 8px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3), 0px 0px 50px rgba(0, 0, 0, 0.3);
+    border-radius: var(--borderRadius);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
     background: var(--whiteColor);
     text-align: center;
 }
@@ -633,6 +662,12 @@ form h5 {
     .main-intro-text {
         font-size: 5rem;
     }
+    .left-side {
+        display: none;
+    }
+    .registration-container {
+        grid-template-columns:1fr;
+    }
 }
 
 .nav-links-open {
@@ -680,13 +715,4 @@ form h5 {
 
 .hamburger-line .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
-}
-
-@media screen and (max-width: 1300px) {
-    .left-side {
-        display: none;
-    }
-    .registration-container {
-        grid-template-columns:1fr;
-    }
 }
