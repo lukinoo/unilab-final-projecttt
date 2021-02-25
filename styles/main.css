@@ -117,7 +117,7 @@ nav {
 }
 
 .scroll-button:hover {
-    background: rgb(194, 63, 15);
+    background: rgb(180, 85, 50);
 }
 
 .scroll-button svg {
@@ -424,16 +424,40 @@ nav {
     align-items: center;
     margin-left: 2rem;
     box-shadow: inset 0 0 2000px rgb(255 255 255 /50%);
-    border-radius: var(--borderRadius);
+    border-radius: 1.2rem;
 }
 
 .user-circle {
     width: 60px;
     height: 60px;
-    background-image: linear-gradient(to top, #7093e4 0%, var(--primaryColor) 100%);
-    padding: 0.7rem;
+    background-image: linear-gradient(to top, rgb(135, 198, 220) 0%, var(--primaryColor) 100%);
+    padding: 0.5rem;
     border-radius: 50%;
     animation: userCircle 1s linear infinite;
+}
+
+.login-with {
+    position: relative;
+}
+
+.login-with::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: -60px;
+    width: 50px;
+    height: 1px;
+    background: var(--blackColor);
+}
+
+.login-with::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -60px;
+    width: 50px;
+    height: 1px;
+    background: var(--blackColor);
 }
 
 .user-image {
@@ -511,18 +535,21 @@ nav {
 }
 
 @keyframes userCircle {
-    0% {
-        background-image: linear-gradient(to top, #7093e4 0%, var(--primaryColor) 100%);
-    }
-    50% {
-        background-image: linear-gradient(to right, #7093e4 0%, var(--primaryColor) 100%);
-    }
-    75% {
-        background-image: linear-gradient(to bottom, #7093e4 0%, var(--primaryColor) 100%);
-    }
-    100% {
-        background-image: linear-gradient(to left, #7093e4 0%, var(--primaryColor) 100%);
-    }
+   0% {
+    background-image: linear-gradient(to top, rgba(135, 197, 220, 0.849) 0%, var(--primaryColor) 100%);
+}
+   25% {
+    background-image: linear-gradient(to right,rgba(135, 197, 220, 0.849)  0%, var(--primaryColor) 100%);
+}
+   50% {
+    background-image: linear-gradient(to bottom,rgba(135, 197, 220, 0.849) 0%, var(--primaryColor) 100%);
+}
+   75% {
+    background-image: linear-gradient(to left, rgba(135, 197, 220, 0.849) 0%, var(--primaryColor) 100%);
+}
+   100% {
+    background-image: linear-gradient(to top, rgba(135, 197, 220, 0.849) 0%, var(--primaryColor) 100%);
+}
 }
 
 /* login section */
@@ -562,12 +589,18 @@ nav {
     font-family: LatoBold;
 }
 
+.registration-image {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
 .right-side {
     align-self: center;
     justify-self: center;
 }
 
-form {
+.login-form {
     min-height: 500px;
     display: flex;
     flex-direction: column;
@@ -580,13 +613,13 @@ form {
     text-align: center;
 }
 
-form h2 {
+.login-form h2 {
     font-size: 3.5rem;
     font-family: PoppinsBold;
     color: var(--blackColor);
 }
 
-form input {
+.login-form input {
     padding: 7px 11px;
     border: none;
     background: none;
@@ -595,8 +628,8 @@ form input {
     border-radius: var(--borderRadius);
 }
 
-form p {
-    font-size: var(--extraSmallsize);
+.facebook-icone {
+    fill: var(--blueColor);
 }
 
 .registration-button {
@@ -611,14 +644,99 @@ form p {
     cursor: pointer;
 }
 
-form h5 {
+.login-form h5 {
     font-size: var(--smallFontSize);
 }
 
-.registration-image {
-    height: 100vh;
+/* contact's section */
+
+.contacts-background {
+    background: url('../images/contacts\ background.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    z-index: 0;
+}
+
+.contacts-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    background: var(--blackMask);
+    z-index: -1;
+}
+
+.main-contact {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-showcase {
+    flex: 2;
+    height: 60vh;
+    margin: 2rem;
+}
+
+.map-showcase iframe {
+    width: 100%;
+    height: 90%;
+}
+
+.contact-box {
+    flex: 1;
+}
+
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    z-index: 5;
+    background: inherit;
+    overflow: hidden; 
+    position: relative;
+}
+
+.contacts-form::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 200px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+.contacts-form input, .contacts-form textarea, .contacts-form button {
+    margin: 1.2rem;
+    outline: none;
+    border: none;
+}
+
+.contacts-form input {
+    padding: 0.6rem 2.5rem;
+}
+
+.contacts-form textarea {
+    resize: none;
+}
+
+.send-button {
+    padding: 1.5rem 2rem;
+    background: var(--blackColor);
+    color: var(--whiteColor);
+    border-radius: var(--borderRadius);
+    cursor: pointer;
+    font-family: LatoRegular;
 }
 
 @media screen and (max-width: 1024px) {
@@ -721,6 +839,12 @@ form h5 {
     }
     .social-media-footer-side svg {
         margin: 0rem 0rem 0rem 0.5rem;
+    }
+    .main-contact {
+        flex-direction: column-reverse;
+    }
+    .contacts-form {
+        margin: 2rem 0rem;
     }
 }
 
