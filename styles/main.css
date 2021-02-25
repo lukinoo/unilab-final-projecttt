@@ -430,12 +430,17 @@ nav {
 .user-circle {
     width: 60px;
     height: 60px;
+    background-image: linear-gradient(to top, #7093e4 0%, var(--primaryColor) 100%);
+    padding: 0.7rem;
     border-radius: 50%;
+    animation: userCircle 1s linear infinite;
 }
 
 .user-image {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .star {
@@ -505,6 +510,20 @@ nav {
     }
 }
 
+@keyframes userCircle {
+    0% {
+        background-image: linear-gradient(to top, #7093e4 0%, var(--primaryColor) 100%);
+    }
+    50% {
+        background-image: linear-gradient(to right, #7093e4 0%, var(--primaryColor) 100%);
+    }
+    75% {
+        background-image: linear-gradient(to bottom, #7093e4 0%, var(--primaryColor) 100%);
+    }
+    100% {
+        background-image: linear-gradient(to left, #7093e4 0%, var(--primaryColor) 100%);
+    }
+}
 
 /* login section */
 .registration {
