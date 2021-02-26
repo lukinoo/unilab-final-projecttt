@@ -650,60 +650,29 @@ nav {
 
 /* contact's section */
 
-.contacts-background {
+.contacts-background-image {
     background: url('../images/contacts\ background.jpg');
     min-height: 100vh;
     background-size: cover;
-    position: relative;
-    z-index: 0;
-}
-
-.contacts-background::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: -1;
-}
-
-.main-contact {
-    min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.map-showcase {
-    flex: 2;
-    height: 60vh;
-    margin: 2rem;
-}
-
-.map-showcase iframe {
-    width: 100%;
-    height: 90%;
-}
-
-.contact-box {
-    flex: 1;
-}
-
-.contacts-form {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 1.5rem;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-    z-index: 5;
-    background: inherit;
-    overflow: hidden; 
-    position: relative;
+    background-attachment: fixed;
 }
 
-.contacts-form::before {
+/* glass effect on cotact */
+.contacts-section {
+    min-height: 60vh;
+    padding: 6rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+.contacts-section::before {
     content: "";
     position: absolute;
     background: inherit;
@@ -712,32 +681,46 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    box-shadow: inset 0 0 200px rgba(255, 255, 255, .5);
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
     filter: blur(10px);
     margin: -20px;
 }
 
-.contacts-form input, .contacts-form textarea, .contacts-form button {
-    margin: 1.2rem;
+.contacts-form {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.contact-box input, .contact-box textarea, .contact-box button {
     outline: none;
-    border: none;
-}
-
-.contacts-form input {
-    padding: 0.6rem 2.5rem;
-}
-
-.contacts-form textarea {
-    resize: none;
-}
-
-.send-button {
-    padding: 1.5rem 2rem;
-    background: var(--blackColor);
-    color: var(--whiteColor);
+    border: 2px solid var(--primaryColor);
+    padding: 1rem 2rem;
     border-radius: var(--borderRadius);
+    background: none;
+    resize: none;
+    margin: 0.7rem;
+}
+
+.contact-box button {
+    padding: 1.3rem 3rem;
     cursor: pointer;
+    color: var(--whiteColor);
+    align-self: center;
     font-family: LatoRegular;
+}
+
+.map-section {
+    background: #fff;
+    min-height: 50vh;
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-section iframe {
+    width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -840,12 +823,6 @@ nav {
     }
     .social-media-footer-side svg {
         margin: 0rem 0rem 0rem 0.5rem;
-    }
-    .main-contact {
-        flex-direction: column-reverse;
-    }
-    .contacts-form {
-        margin: 2rem 0rem;
     }
 }
 
