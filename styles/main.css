@@ -712,7 +712,7 @@ nav {
 
 .map-section {
     background: #fff;
-    min-height: 50vh;
+    min-height: 70vh;
     padding: 3rem 5rem;
     display: flex;
     justify-content: center;
@@ -721,6 +721,28 @@ nav {
 
 .map-section iframe {
     width: 100%;
+}
+
+.contacts-footer {
+    background: var(--blackColor);
+}
+
+.main-contacts-footer-side {
+    min-height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts-footer-social-media {
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-footer-info {
+    color: var(--whiteColor);
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -789,6 +811,9 @@ nav {
     .registration-container {
         grid-template-columns:1fr;
     }
+    .contacts-footer-social-media {
+        width: 45%;
+    }
 }
 
 .nav-links-open {
@@ -823,6 +848,10 @@ nav {
     }
     .social-media-footer-side svg {
         margin: 0rem 0rem 0rem 0.5rem;
+    }
+    .main-contacts-footer-side {
+        flex-direction: column;
+        justify-content: space-around;
     }
 }
 
